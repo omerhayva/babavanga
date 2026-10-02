@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #d4af37;
+  --gold-dim: #8a7433;
+  --amethyst: #8b7bd8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #04050e;
+  color: #ece9e2;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Yıldızlı gece arka planı — saf CSS, harici kaynak yok */
+.night-sky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 700px at 85% -10%, rgba(93, 74, 158, 0.22), transparent 60%),
+    radial-gradient(900px 600px at -10% 30%, rgba(28, 22, 64, 0.55), transparent 60%),
+    radial-gradient(700px 500px at 50% 110%, rgba(212, 175, 55, 0.07), transparent 60%),
+    linear-gradient(180deg, #04050e 0%, #060818 45%, #04050e 100%);
+}
+
+.night-sky::before,
+.night-sky::after {
+  content: '';
+  position: absolute;
+  inset: -50%;
+  background-image:
+    radial-gradient(1.4px 1.4px at 12% 22%, rgba(236, 233, 226, 0.75) 50%, transparent 51%),
+    radial-gradient(1px 1px at 38% 68%, rgba(236, 233, 226, 0.5) 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 64% 14%, rgba(230, 207, 143, 0.7) 50%, transparent 51%),
+    radial-gradient(1px 1px at 82% 48%, rgba(236, 233, 226, 0.55) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 28% 86%, rgba(179, 167, 236, 0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 55% 42%, rgba(236, 233, 226, 0.4) 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 91% 78%, rgba(236, 233, 226, 0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 8% 54%, rgba(230, 207, 143, 0.5) 50%, transparent 51%);
+  background-size: 640px 640px;
+  animation: star-drift 130s linear infinite;
+  opacity: 0.8;
+}
+
+.night-sky::after {
+  background-size: 420px 420px;
+  animation-duration: 90s;
+  animation-direction: reverse;
+  opacity: 0.45;
+}
+
+@keyframes star-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-320px, -640px, 0); }
+}
+
+/* Altın çizgi ayraç */
+.gold-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--gold);
+}
+.gold-rule::before,
+.gold-rule::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+}
+
+/* Karta hover: nazik altın nefes */
+.card-hover {
+  transition: transform 0.5s cubic-bezier(0.2, 0.6, 0.2, 1), box-shadow 0.5s ease, border-color 0.5s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.28), 0 24px 60px -28px rgba(0, 0, 0, 0.9);
+}
+
+/* Seçenek butonları */
+.option-btn {
+  position: relative;
+  text-align: left;
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  background: linear-gradient(160deg, rgba(17, 19, 48, 0.85), rgba(9, 11, 28, 0.9));
+  transition: all 0.35s ease;
+}
+.option-btn:hover:not(:disabled) {
+  border-color: rgba(212, 175, 55, 0.55);
+  background: linear-gradient(160deg, rgba(26, 29, 66, 0.95), rgba(13, 16, 38, 0.95));
+  transform: translateY(-1px);
+}
+.option-btn.selected {
+  border-color: rgba(212, 175, 55, 0.9);
+  background: linear-gradient(160deg, rgba(64, 52, 20, 0.55), rgba(24, 22, 46, 0.95));
+  box-shadow: 0 0 24px -6px rgba(212, 175, 55, 0.35);
+}
+
+/* Kapalı tarot kartı */
+.tarot-back {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(212, 175, 55, 0.28), transparent 55%),
+    repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.05) 0 2px, transparent 2px 9px),
+    linear-gradient(165deg, #151838, #0a0c22 70%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.45s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.tarot-back:hover {
+  border-color: rgba(212, 175, 55, 0.8);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 34px -8px rgba(212, 175, 55, 0.5);
+}
+.tarot-back.picked {
+  border-color: #d4af37;
+  box-shadow: 0 0 40px -6px rgba(212, 175, 55, 0.75);
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Shimmer (yükleniyor metni) */
+.shimmer-text {
+  background: linear-gradient(100deg, #9d9ab4 20%, #e6cf8f 42%, #9d9ab4 62%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 2.6s linear infinite;
+}
+
+/* Skor barı */
+.score-bar {
+  height: 6px;
+  background: rgba(236, 233, 226, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.score-bar > div {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #5d4a9e, #b3a7ec 55%, #e6cf8f);
+  transition: width 1.6s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+/* İnce scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #06081a; }
+::-webkit-scrollbar-thumb { background: #23264f; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #34396e; }
+
+/* Form */
+input, select, textarea {
+  color-scheme: dark;
+}
+.field {
+  width: 100%;
+  background: rgba(9, 11, 28, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem;
+  color: #ece9e2;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.field:focus {
+  border-color: rgba(212, 175, 55, 0.65);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+.field::placeholder { color: #6f6d85; }
+
+/* Ölçek (range) */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(93, 74, 158, 0.7), rgba(212, 175, 55, 0.6));
+  outline: none;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f2e2ac, #d4af37 60%, #8a7433);
+  border: 1px solid #04050e;
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.55);
+  cursor: pointer;
+}
+input[type='range']::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #f2e2ac, #d4af37 60%, #8a7433);
+  border: 1px solid #04050e;
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.55);
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

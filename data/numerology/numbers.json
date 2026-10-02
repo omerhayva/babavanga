@@ -1,0 +1,98 @@
+{
+  "1": {
+    "themes": ["yeni başlangıçlar", "liderlik", "bağımsızlık", "öncü ruh"],
+    "positive": ["Bir sayısı kendi yolunu çizenlerin sayısıdır; inisiyatif aldığında şanslan artıyor.", "Tek başına ilerlemekten korkmuyorsun; bu senin en doğal hâlin.", "Başlangıç enerjin güçlü: bir şeyi sıfırdan kurma yeteneğin yüksek."],
+    "negative": ["Her şeyi tek başına yapma isteği, destek almanı zorlaştırıyor.", "Sabırsızlık, en olgun projelerini yarım bıraktırabilir."],
+    "love": ["Aşkta bağımsızlığın belirleyici: sana alan tanıyan bir partner seni büyütür.", "İlişkide liderlik dengesi önemli; her kararı senin vermek yorabilir."],
+    "money": ["Kendi işini kurma veya tek başına ilerleme potansiyelin yüksek.", "Para konusunda hızlı kararlar yerine küçük ama öz adımlar seni taşır."],
+    "career": ["Girişimci ve öncü roller sana göre; takipçi pozisyonlar seni kısar.", "Yeni projelerin ilk adımcısı olma şansın yüksek."]
+  },
+  "2": {
+    "themes": ["uyum", "işbirliği", "ikilik", "sezgisel denge"],
+    "positive": ["İki sayısı ortaklıkların sayısıdır; birlikte büyüdüğünde güçleniyorsun.", "Empatin ve diplomasi yeteneğin seni değerli kılar.", "İki tarafı bir arada tutabilen nadir bir denge gücün var."],
+    "negative": ["Karşı tarafın onayı olmadan adım atmakta zorlanıyorsun.", "Çatışmadan kaçmak, çözülmesi gereken konuları erteletiyor."],
+    "love": ["Aşkta ortaklık ve karşılıklılık senin anahtarın.", "İlişkin sana ayna tutuyor; ne verirsen onun dengesini alıyorsun."],
+    "money": ["Ortak girişimler ve işbirlikleri maddi açıdan sana kazandırır.", "Tek başına büyük risk almak yerine paylaşılan kararlar seni korur."],
+    "career": ["Aracı, danışman, ekip oyuncusu rollerinde parlıyorsun.", "Sert rekabet ortamları yerine işbirlikçi alanlar seni büyütür."]
+  },
+  "3": {
+    "themes": ["ifade", "yaratıcılık", "iletişim", "genişleme"],
+    "positive": ["Üç sayısı sözün ve yaratıcılığın sayısıdır; anlatım gücün senin maydondur.", "İnsanları etrafına toplayan sıcak bir enerjin var.", "Sanat, iletişim ve üretim konularında doğal bir yeteneğin var."],
+    "negative": ["Dağınık enerji aynı anda çok kapıyı aralayabilir; odak senin sınavın.", "Yüzeysel kalmak derin bağ kurma şansını azaltabilir."],
+    "love": ["Aşkta konuşulan kelime senin için sevgi kanıtı; sessiz kalan ilişki seni beslemez.", "Neşen ve espri anlayışın çekim gücünü artırıyor."],
+    "money": ["İletişim ve yaratıcılığını paraya çeviren alanlar sana en çok kazandırır.", "Bolluk hissini büyütürken bütçe disiplinini elden bırakma."],
+    "career": ["Reklam, medya, tasarım, eğitim gibi ifade alanlarında hızla yükselirsin.", "Sahne ve görünür roller seni besliyor."]
+  },
+  "4": {
+    "themes": ["düzen", "emek", "sağlam temel", "sistem"],
+    "positive": ["Dört sayısı kurucuların sayısıdır; sen kalıcı yapılar inşa ediyorsun.", "Disiplinin ve çalışkanlığın uzun vadede fark yaratıyor.", "Güvenilirliğin en büyük sermayen."],
+    "negative": ["Değişim sana pahalı geliyor; rutin seni hem koruyor hem kısıtlıyor.", "Kontrol ihtiyacı esnekliğini azaltıyor."],
+    "love": ["Aşkta istikrar arıyorsun; belirsizlik sende en çok yorulan alan.", "Söz verdiğinde tutan bir partnersin; bu karşılığını buluyor."],
+    "money": ["Maddi güvenlik senin için duygusal güvenlikle eş.", "Birikim ve düzenli yatırım sana doğal gelen stratejiler."],
+    "career": ["Kurumsal ve yapılandırılmış ortamlarda güçlusün.", "Uzun vadeli emeğin karşılığını gecikmeli ama sağlam alırsın."]
+  },
+  "5": {
+    "themes": ["değişim", "özgürlük", "hareket", "deneyim"],
+    "positive": ["Beş sayısı yolun ve özgürlüğün sayısıdır; yeni deneyimlerde canlanıyorsun.", "Uyum yeteneğin yüksek; her ortama hızlı eklemlenirsin.", "Cesaretin kapıları senin yerine açıyor."],
+    "negative": ["Sıkılma hızın yüksek; yarım kalan işler birikiyor.", "Bağ kurarken özgürlüğünü koruma refleksin mesafe yaratabilir."],
+    "love": ["Aşkta heyecan ve yenilik seni besliyor; durağanlık sıkıcı geliyor.", "Özgürlüğünü kısıtlamayan ama derinleşen bir bağ senin idealin."],
+    "money": ["Gelirinde dalgalanma olabilir; esnek bütçe sana iyi geliyor.", "Birden fazla gelir kanalı sana doğal gelen model."],
+    "career": ["Değişken, dinamik ve seyahatli işler seni besliyor.", "Aynı masada 10 yıl senin için kader değil, seçim."]
+  },
+  "6": {
+    "themes": ["sorumluluk", "sevgi", "hizmet", "yuva"],
+    "positive": ["Altı sayısı bakım ve sorumluluğun sayısıdır; sevdiklerine kol kanat geriyorsun.", "Yuva kurma ve koruma içgüdün güçlü.", "Güven veren varlığın insanları sana bağlıyor."],
+    "negative": ["Herkesin yükünü taşımak seni tüketiyor; sınır koymayı öğrenmelisin.", "Kusursuz hizmet baskısı kendine karşı sertleşmene neden oluyor."],
+    "love": ["Aşkta fedakârlık sınır tanımayabilir; dengeli vermeyi öğrenmelisin.", "Aile kurma konusundaki arzun güçlü ve anlamlı."],
+    "money": ["Maddi kararları sevdiklerin için verirken dikkatli ol; kendi güvenliğini de kur.", "Aile bütçesi ve ortak hesaplar ana temaların."],
+    "career": ["İnsanlara dokunan — sağlık, eğitim, hizmet — alanlarda parlıyorsun.", "Ekip babası/anne figürü olarak sorumluluk üstleniyorsun."]
+  },
+  "7": {
+    "themes": ["analiz", "içe dönüş", "arayış", "bilgelik"],
+    "positive": ["Yedi sayısı arayışçının sayısıdır; derine indikçe güçleniyorsun.", "Kendi başına düşünebildiğin sessiz alanlara ihtiyacın var.", "Sezgi ve mantığı birleştiren nadir bir analizin var."],
+    "negative": ["Aşırı analiz kararları donduruyor; bazen hissetmek yeterli.", "Duygusal mesafen yalnızlık hissine dönüşebilir."],
+    "love": ["Aşkta derinlik arıyorsun; yüzeysel bağlar seni beslemiyor.", "Sana zihinsel alan tanıyan bir partner ilişkiyi taşır."],
+    "money": ["Mali konularda araştırmacı tavrın seni koruyor; aceleci değilsin.", "Uzmanlık ve derin bilgi senin kazanç kapın."],
+    "career": ["Uzmanlık gerektiren alanlar — araştırma, teknik, strateji — senin sahnen.", "Yalnız çalışabildiğin derin odak ortamlarında üretkensin."]
+  },
+  "8": {
+    "themes": ["güç", "sonuç", "maddi dünya", "yönetim"],
+    "positive": ["Sekiz sayısı gücün ve sonucun sayısıdır; büyük hedeflerle yaradılıyorsun.", "Yönetim ve organizasyon yeteneğin doğal.", "Maddi dünyada somut sonuçlar üretebilecek yapıdasın."],
+    "negative": ["Güç ve kontrol dengesi hassas; iş hayatı özel hayatı gölgeleyebilir.", "Başarı hırsı bedeninin sinyallerini bastırmana neden olabilir."],
+    "love": ["Aşkta da netlik ve taahhüt istiyorsun; belirsizlik seni yoruyor.", "Güçlü bir partnerle eşitler dengesi kurabilirsin."],
+    "money": ["Maddi konularda güçlü bir çekim alanın var; büyük ölçekli düşünmelisin.", "Yönettiğin her kaynak senin için büyüme aracı."],
+    "career": ["Liderlik, yönetim ve girişimcilik sana yakın.", "Somut, ölçülebilir sonuçlar ürettiğinde mutlu oluyorsun."]
+  },
+  "9": {
+    "themes": ["tamamlama", "insanlık", "bırakma", "olgunluk"],
+    "positive": ["Dokuz sayısı kapanışların sayısıdır; bitirerek büyüyorsun.", "Yaşadıklarından öğreten olgun bir bakışın var.", "İnsanlara ve anlama hizmet eden konular seni besliyor."],
+    "negative": ["Geçmişi bırakmakta zorlanıyorsun; fazlalıkları sürekli taşıyorsun.", "Herkesi kurtarma dürtüsü sınır tanımaz hale gelebilir."],
+    "love": ["Aşkta eskilerden ders alıyorsun; yeni bağ geçmişin tekrarı değil.", "Bütünlüklü ve olgun bir sevgi anlayışın var."],
+    "money": ["Maddi konularda döngü kapanıyor; eski borç ve hesaplar netleşiyor.", "Kazancını anlamlı alanlara yönlendirmek seni besliyor."],
+    "career": ["Deneyimini başkalarına aktaracağın roller seni taşıyor.", "Bir döngüyü tamamlayıp yeni bir sayfa açma dönemindesin."]
+  },
+  "11": {
+    "themes": ["sezgi", "ilham", "yüksek farkındalık", "master sayı"],
+    "positive": ["On bir master bir sayısıdır: sezgin sıradanının ötesinde çalışıyor.", "İnsanlara ilham veren bir varlığınsın; varlığın bile yol gösteriyor.", "Fikirlerin zamanından önce gelebilir; sabırla buluşunca güçleniyor."],
+    "negative": ["Yoğun alıcı hassasiyetin seni yorabilir; enerji hijyeni şart.", "Kendine yüksek beklenti koymak gerginlik yaratıyor."],
+    "love": ["Aşkta ruhsal bir bağ arıyorsun; yüzeysel çekicilik uzun soluklu değil.", "Sezgin partnerin sözlerinden çok enerjisinden anlıyor."],
+    "money": ["İlham ve sezgiyi kullanan işlerde kazancın artıyor.", "Maddi kararlarında iç sesin mantığını destekliyor."],
+    "career": ["Yaratıcı ve ilham veren roller — öğretmenlik, sanat, rehberlik — senin alanın.", "Sahneye çıkma zamanın geldiğinde sesin çok duyulacak."]
+  },
+  "22": {
+    "themes": ["büyük yapı", "usta kurucu", "vizyon", "master sayı"],
+    "positive": ["Yirmi iki master kurucu sayısıdır: büyük hayalleri somut yapılara çeviriyorsun.", "Vizyonun ve pratik zekân aynı anda çalışıyor.", "Uzun vadeli, kalıcı eserler bırakma potansiyelin yüksek."],
+    "negative": ["Büyük hedefler küçük adımları hor görmene neden olabilir.", "Kendine yüklediğin misyon sorumluluğu bazen ağırlaşıyor."],
+    "love": ["Aşkta da 'hayat eseri' gibi bir bağ arıyorsun; kolay ve yüzeysel olan sana yetmiyor.", "Ortak hedefli ilişkiler seni en çok besleyen."],
+    "money": ["Büyük ölçekli ve uzun vadeli maddi projeler senin alanın.", "Kurumsal veya kalıcı yapılar kurarak kazanıyorsun."],
+    "career": ["Kurucu, yönetici, mimar rolllerinde tarihe iz bırakabilirsin.", "Emeğin yıllar içinde büyük yapılara dönüşüyor."]
+  },
+  "33": {
+    "themes": ["şefkat", "rehberlik", "evrensel sevgi", "master sayı"],
+    "positive": ["Otuz üç master öğretmen sayısıdır: şefkatin yol gösterici bir güce dönüşüyor.", "İnsanların sana yönelmesi tesadüf değil; güven enerjisi yayıyorsun.", "Sevgiyle disiplini birleştiren olgun bir yapıdasın."],
+    "negative": ["Herkesin acısını üstlenmek seni tüketebilir.", "Şefkatin sınırı olmaz ama senin enerjinin sınırı var."],
+    "love": ["Aşkta koşulsuz sevgi ile sağlıklı sınır arasında denge kurmalısın.", "İlişkilerinde öğreten ve büyüten bir rol üstleniyorsun."],
+    "money": ["Kazancını paylaşmak ve anlamlı işlere yönlendirmek sana iyi geliyor.", "Hizmet temelli işler hem maddi hem manevi karşılık veriyor."],
+    "career": ["Öğretmenlik, mentorluk, şifa ve rehberlik rolleri senin kaderin.", "Etkin yılların en güçlü olduğu alan, kalabalığa hizmet."]
+  }
+}

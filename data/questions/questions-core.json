@@ -1,0 +1,445 @@
+[
+  {
+    "id": "love_001", "category": "love", "stage": "core", "order": 10, "weight": 3, "required": true, "tags": ["love"],
+    "text": "Bu kişiyi düşündüğünde ilk hissettiğin şey hangisi?",
+    "helperText": "Tek bir kelimeyi seç — ilk gelen.",
+    "type": "single",
+    "options": [
+      { "value": "ozlem", "label": "Özlem", "scores": { "relationship": 3, "hope": 1 }, "next": "love_002" },
+      { "value": "merak", "label": "Merak", "scores": { "opportunity": 2, "confidence": -1 } },
+      { "value": "korku", "label": "Korku", "scores": { "risk": 3, "hope": -2 }, "next": "love_003" },
+      { "value": "guven", "label": "Güven", "scores": { "relationship": 3, "confidence": 2 } },
+      { "value": "kararsizlik", "label": "Kararsızlık", "scores": { "confidence": -3, "risk": 1 }, "next": "love_004" }
+    ]
+  },
+  {
+    "id": "love_002", "category": "love", "stage": "depth", "order": 11, "weight": 3, "required": true, "tags": ["love", "longing"],
+    "text": "Özlemin içinde daha çok ne var?",
+    "type": "single",
+    "options": [
+      { "value": "umut", "label": "Yeniden birleşme umudu", "scores": { "hope": 3, "relationship": 2, "patience": 1 } },
+      { "value": "soz", "label": "Bitmemiş sözler", "scores": { "relationship": 2, "urgency": 2, "patience": -1 } },
+      { "value": "ilkgun", "label": "İlk günlerdeki hali", "scores": { "hope": 1, "relationship": 1, "patience": 1 } },
+      { "value": "alistanim", "label": "Sadece alışkanlık", "scores": { "hope": -2, "change": 2 } }
+    ]
+  },
+  {
+    "id": "love_003", "category": "love", "stage": "depth", "order": 12, "weight": 3, "required": true, "tags": ["love", "fear"],
+    "text": "Korkunun kaynağı daha çok hangisi?",
+    "type": "single",
+    "options": [
+      { "value": "terk", "label": "Terk edilmek", "scores": { "risk": 3, "hope": -2, "relationship": 2 } },
+      { "value": "tekrar", "label": "Aynı şeyi tekrar yaşamak", "scores": { "risk": 3, "patience": 2 } },
+      { "value": "karsilik", "label": "Karşılık görmemek", "scores": { "risk": 2, "confidence": -2, "relationship": 2 } },
+      { "value": "bilinmeyen", "label": "Bilinmeyenin kendisi", "scores": { "risk": 2, "change": 1, "confidence": -1 } }
+    ]
+  },
+  {
+    "id": "love_004", "category": "love", "stage": "depth", "order": 13, "weight": 3, "required": true, "tags": ["love", "undecided"],
+    "text": "Kararsızlığının temel nedeni daha çok hangisi?",
+    "type": "single",
+    "options": [
+      { "value": "tutum", "label": "Karşı tarafın tutumu belirsiz", "scores": { "risk": 2, "confidence": -2, "urgency": 1 }, "next": "love_006" },
+      { "value": "kendi", "label": "Kendi duygularımdan emin değilim", "scores": { "confidence": -3, "patience": 1 } },
+      { "value": "disarisi", "label": "Dış etkenler (aile, mesafe, zaman)", "scores": { "patience": 2, "risk": 1, "urgency": -1 } },
+      { "value": "gecmis", "label": "Geçmiş deneyimlerim", "scores": { "patience": 2, "risk": 1, "hope": -1 } }
+    ]
+  },
+  {
+    "id": "love_005", "category": "love", "stage": "core", "order": 14, "weight": 2, "required": true, "tags": ["love", "communication"],
+    "text": "Aranızdaki iletişim şu an nasıl?",
+    "type": "single",
+    "options": [
+      { "value": "acik", "label": "Açık ve düzenli", "scores": { "relationship": 3, "confidence": 2, "hope": 1 }, "next": "love_007" },
+      { "value": "seyyrek", "label": "Sık değil ama sıcak", "scores": { "relationship": 1, "patience": 2 } },
+      { "value": "soguk", "label": "Soğuk ve mesafeli", "scores": { "relationship": -2, "risk": 2, "hope": -1 } },
+      { "value": "kesik", "label": "Kesildi / tamamen yok", "scores": { "risk": 3, "hope": -2, "change": 2 } }
+    ]
+  },
+  {
+    "id": "love_006", "category": "love", "stage": "core", "order": 15, "weight": 3, "required": true, "tags": ["love", "other"],
+    "text": "Karşındaki kişi sana nasıl davranıyor?",
+    "type": "single",
+    "options": [
+      { "value": "sicak", "label": "Sıcak ve ilgili", "scores": { "relationship": 3, "hope": 2 } },
+      { "value": "dengesiz", "label": "Dengesiz — bazen çok ilgili, bazen yok", "scores": { "risk": 3, "confidence": -2, "urgency": 1 } },
+      { "value": "mesafeli", "label": "Mesafeli", "scores": { "relationship": -1, "risk": 2, "patience": 1 } },
+      { "value": "okunamiyor", "label": "Bilmiyorum — okuyamıyorum", "scores": { "confidence": -3, "risk": 1 } }
+    ]
+  },
+  {
+    "id": "love_007", "category": "love", "stage": "core", "order": 16, "weight": 2, "required": true, "tags": ["love", "challenge"],
+    "text": "Bu bağda seni en çok zorlayan ne?",
+    "type": "single",
+    "options": [
+      { "value": "belirsizlik", "label": "Belirsizlik", "scores": { "risk": 2, "confidence": -2 } },
+      { "value": "karsiliksiz", "label": "Karşılıksız vermek", "scores": { "relationship": 1, "hope": -2, "urgency": 1 } },
+      { "value": "zamanlama", "label": "Zamanlama", "scores": { "patience": 2, "urgency": 2 } },
+      { "value": "yargi", "label": "Dış yargılar ve çevre", "scores": { "risk": 1, "confidence": -1 } }
+    ]
+  },
+  {
+    "id": "love_008", "category": "love", "stage": "core", "order": 17, "weight": 3, "required": true, "tags": ["love"],
+    "text": "Bu bağın sana iyi geldiğine ne kadar inanıyorsun?",
+    "type": "scale", "scaleLabels": ["Hiç inanmıyorum", "Kesinlikle inanıyorum"],
+    "scoring": { "hope": 2.5, "confidence": 1.5, "risk": -1.5 }
+  },
+  {
+    "id": "love_009", "category": "love", "stage": "core", "order": 18, "weight": 3, "required": true, "tags": ["love", "heart"],
+    "text": "Kalbin şu an daha çok ne diyor?",
+    "type": "single",
+    "options": [
+      { "value": "devam", "label": "Devam et", "scores": { "hope": 3, "relationship": 2, "confidence": 1 } },
+      { "value": "izle", "label": "Bir süre izle, acele etme", "scores": { "patience": 3, "urgency": -2 } },
+      { "value": "bitir", "label": "Bitir ama zoruma gidiyor", "scores": { "change": 3, "hope": -1, "relationship": -1 } },
+      { "value": "bilmiyorum", "label": "Bilmiyorum", "scores": { "confidence": -3 } }
+    ]
+  },
+  {
+    "id": "rel_001", "category": "relationship", "stage": "core", "order": 20, "weight": 3, "required": true, "tags": ["relationship"],
+    "text": "İlişinizde son dönemde en çok ne değişti?",
+    "type": "single",
+    "options": [
+      { "value": "ileti", "label": "İletişim azaldı", "scores": { "relationship": -1, "risk": 1 }, "next": "rel_002" },
+      { "value": "tartis", "label": "Tartışmalar arttı", "scores": { "risk": 2, "urgency": 2 }, "next": "rel_003" },
+      { "value": "rutin", "label": "Rutine bindi", "scores": { "change": 2, "patience": 1 } },
+      { "value": "disstres", "label": "Dış stres yansıdı (iş, para, aile)", "scores": { "patience": 2, "money": 1, "risk": 1 } }
+    ]
+  },
+  {
+    "id": "rel_002", "category": "relationship", "stage": "depth", "order": 21, "weight": 3, "required": true, "tags": ["relationship", "silence"],
+    "text": "Azalan iletişimin altında ne hissediyorsun?",
+    "type": "single",
+    "options": [
+      { "value": "yorgunluk", "label": "Yorgunluk", "scores": { "patience": 2, "hope": -1 } },
+      { "value": "kirilganlik", "label": "Kırılganlık — incinmekten korunuyorum", "scores": { "risk": 2, "relationship": 1 } },
+      { "value": "ilgi", "label": "İlgi kaybı", "scores": { "relationship": -2, "change": 2 } },
+      { "value": "guvenli", "label": "Sessiz kalmak daha güvenli geliyor", "scores": { "patience": 2, "confidence": -1 } }
+    ]
+  },
+  {
+    "id": "rel_003", "category": "relationship", "stage": "depth", "order": 22, "weight": 2, "required": true, "tags": ["relationship", "conflict"],
+    "text": "Tartışmalarınız daha çok hangi konuda?",
+    "type": "single",
+    "options": [
+      { "value": "guven", "label": "Güven", "scores": { "risk": 3, "relationship": 1 } },
+      { "value": "para", "label": "Para", "scores": { "money": 3, "risk": 1 } },
+      { "value": "plan", "label": "Gelecek planları", "scores": { "change": 2, "urgency": 1 } },
+      { "value": "aileler", "label": "Aileler", "scores": { "risk": 2, "patience": 1 } },
+      { "value": "deger", "label": "Değerler ve alışkanlıklar", "scores": { "patience": 2, "change": 1 } }
+    ]
+  },
+  {
+    "id": "rel_004", "category": "relationship", "stage": "core", "order": 23, "weight": 2, "required": true, "tags": ["relationship"],
+    "text": "Bu ilişkide en çok neyi özlüyorsun?",
+    "type": "single",
+    "options": [
+      { "value": "anlasilmak", "label": "Anlaşılmak", "scores": { "relationship": 2, "confidence": -1 } },
+      { "value": "yakinlik", "label": "Yakınlık", "scores": { "relationship": 3, "hope": 1 } },
+      { "value": "eglence", "label": "Birlikte eğlenmek", "scores": { "hope": 2, "change": 1 } },
+      { "value": "huzur", "label": "Huzur", "scores": { "patience": 2, "hope": 1 } }
+    ]
+  },
+  {
+    "id": "rel_005", "category": "relationship", "stage": "core", "order": 24, "weight": 3, "required": true, "tags": ["relationship", "future"],
+    "text": "Ortak gelecek konusunda ne düşünüyorsun?",
+    "type": "single",
+    "options": [
+      { "value": "ayni", "label": "Aynı yönde ilerliyoruz", "scores": { "hope": 3, "relationship": 2, "confidence": 2 } },
+      { "value": "plan", "label": "Planlar henüz netleşmedi", "scores": { "patience": 2, "confidence": -1 } },
+      { "value": "ayri", "label": "Yönlerimiz ayrılıyor gibi", "scores": { "change": 3, "risk": 2, "hope": -1 } },
+      { "value": "konus", "label": "Bunu konuşamıyoruz bile", "scores": { "risk": 2, "confidence": -2 } }
+    ]
+  },
+  {
+    "id": "rel_006", "category": "relationship", "stage": "core", "order": 25, "weight": 3, "required": true, "tags": ["relationship"],
+    "text": "İlişki için harcanan çaba dengesi ne kadar eşit?",
+    "type": "scale", "scaleLabels": ["Çaba neredeyse tamamen bende", "Çaba tamamen eşit"],
+    "scoring": { "confidence": 2, "hope": 1.5, "relationship": 1.5 }
+  },
+  {
+    "id": "rel_007", "category": "relationship", "stage": "core", "order": 26, "weight": 3, "required": true, "tags": ["relationship"],
+    "text": "İç sesin sana ne fısıldıyor?",
+    "type": "single",
+    "options": [
+      { "value": "degerli", "label": "Bu ilişki değerli — bir şans daha", "scores": { "hope": 3, "relationship": 2 } },
+      { "value": "esik", "label": "Bir eşiğin içindeyiz", "scores": { "change": 3, "urgency": 2 } },
+      { "value": "kabul", "label": "Bir şeyleri kabul etmemek için çabalıyorum", "scores": { "risk": 2, "hope": -2, "confidence": -1 } },
+      { "value": "sus", "label": "Susmayı tercih ediyorum", "scores": { "patience": 2, "confidence": -2 } }
+    ]
+  },
+  {
+    "id": "mrg_001", "category": "marriage", "stage": "core", "order": 30, "weight": 3, "required": true, "tags": ["marriage"],
+    "text": "Evlilik düşüncesi sende daha çok ne uyandırıyor?",
+    "type": "single",
+    "options": [
+      { "value": "heyecan", "label": "Heyecan", "scores": { "hope": 3, "relationship": 2 }, "next": "mrg_003" },
+      { "value": "karisik", "label": "Heyecan ve kaygı karışımı", "scores": { "hope": 1, "risk": 2 }, "next": "mrg_002" },
+      { "value": "baski", "label": "Baskı hissi", "scores": { "urgency": 3, "confidence": -2 } },
+      { "value": "hazirdegil", "label": "Henüz hazır değilim hissi", "scores": { "patience": 2, "confidence": -1 } }
+    ]
+  },
+  {
+    "id": "mrg_002", "category": "marriage", "stage": "depth", "order": 31, "weight": 3, "required": true, "tags": ["marriage", "anxiety"],
+    "text": "Kaygının kaynağı ne?",
+    "type": "single",
+    "options": [
+      { "value": "kisi", "label": "Doğru kişi olduğundan emin değilim", "scores": { "risk": 3, "confidence": -2, "relationship": 1 } },
+      { "value": "sorumluluk", "label": "Sorumlulukların ağırlığı", "scores": { "patience": 2, "risk": 1 } },
+      { "value": "aile", "label": "Ailelerin beklentileri", "scores": { "urgency": 2, "confidence": -1 } },
+      { "value": "maddi", "label": "Maddi hazırlık", "scores": { "money": 3, "patience": 1 } }
+    ]
+  },
+  {
+    "id": "mrg_003", "category": "marriage", "stage": "core", "order": 32, "weight": 2, "required": true, "tags": ["marriage", "timing"],
+    "text": "Zamanlama konusunda durum ne?",
+    "type": "single",
+    "options": [
+      { "value": "konu", "label": "Konu açıldı, somut adım yok", "scores": { "patience": 2, "urgency": 1 } },
+      { "value": "plan", "label": "Somut bir plan / tarih var", "scores": { "hope": 3, "confidence": 2 } },
+      { "value": "konusulmadi", "label": "Henüz konuşulmadı", "scores": { "confidence": -2, "patience": 1 } },
+      { "value": "kaciyor", "label": "Bir taraf konudan kaçıyor", "scores": { "risk": 2, "urgency": 1 } }
+    ]
+  },
+  {
+    "id": "mrg_004", "category": "marriage", "stage": "core", "order": 33, "weight": 2, "required": true, "tags": ["marriage", "social"],
+    "text": "Etrafından gelen baskı nasıl?",
+    "type": "single",
+    "options": [
+      { "value": "yok", "label": "Hiç yok", "scores": { "confidence": 2 } },
+      { "value": "arada", "label": "Arada sırada hatırlatma var", "scores": { "urgency": 2 } },
+      { "value": "surekli", "label": "Sürekli bir beklenti var", "scores": { "urgency": 3, "confidence": -2, "risk": 1 } }
+    ]
+  },
+  {
+    "id": "mrg_005", "category": "marriage", "stage": "core", "order": 34, "weight": 3, "required": true, "tags": ["marriage"],
+    "text": "Bu kişiyle kuracağın ortak hayata ne kadar güveniyorsun?",
+    "type": "scale", "scaleLabels": ["Hiç güvenmiyorum", "Tamamen güveniyorum"],
+    "scoring": { "confidence": 2.5, "hope": 2, "relationship": 1.5 }
+  },
+  {
+    "id": "mrg_006", "category": "marriage", "stage": "core", "order": 35, "weight": 2, "required": true, "tags": ["marriage"],
+    "text": "Karar için sende eksik olan ne?",
+    "type": "single",
+    "options": [
+      { "value": "zaman", "label": "Zaman", "scores": { "patience": 3 } },
+      { "value": "isaret", "label": "Net bir işaret", "scores": { "confidence": -2, "hope": 1 } },
+      { "value": "maddi", "label": "Maddi düzen", "scores": { "money": 3 } },
+      { "value": "kendim", "label": "Kendi hazır oluşum", "scores": { "patience": 2, "confidence": 1 } }
+    ]
+  },
+  {
+    "id": "mon_001", "category": "money", "stage": "core", "order": 40, "weight": 3, "required": true, "tags": ["money"],
+    "text": "Maddi durumunda son dönemde en belirgin olan ne?",
+    "type": "single",
+    "options": [
+      { "value": "geliraz", "label": "Gelir azaldı", "scores": { "money": 3, "risk": 2, "hope": -1 }, "next": "mon_002" },
+      { "value": "giderart", "label": "Giderler arttı", "scores": { "money": 3, "risk": 1 } },
+      { "value": "borc", "label": "Borç yükü hissediyorum", "scores": { "money": 3, "risk": 3, "hope": -2 } },
+      { "value": "dengeli", "label": "Dengeli ama kıpırdayamıyorum", "scores": { "patience": 2, "change": 1, "money": 1 } },
+      { "value": "firsat", "label": "Beklenmedik bir fırsat var", "scores": { "opportunity": 3, "hope": 2 }, "next": "mon_004" }
+    ]
+  },
+  {
+    "id": "mon_002", "category": "money", "stage": "depth", "order": 41, "weight": 2, "required": true, "tags": ["money", "plan"],
+    "text": "Buna karşılık bir planın var mı?",
+    "type": "single",
+    "options": [
+      { "value": "butce", "label": "Evet, sıkı bir bütçem var", "scores": { "confidence": 3, "money": 1 } },
+      { "value": "kismen", "label": "Kısmen — uygulamada zorlanıyorum", "scores": { "patience": 2, "confidence": -1 } },
+      { "value": "daginik", "label": "Hayır, dağınığım", "scores": { "risk": 2, "confidence": -2 } }
+    ]
+  },
+  {
+    "id": "mon_003", "category": "money", "stage": "core", "order": 42, "weight": 2, "required": true, "tags": ["money", "fear"],
+    "text": "Para konusundaki en büyük korkun hangisi?",
+    "type": "single",
+    "options": [
+      { "value": "erime", "label": "Birikimlerimin erimesi", "scores": { "risk": 3, "money": 2 } },
+      { "value": "borc", "label": "Borcu kapatamamak", "scores": { "risk": 3, "money": 3, "hope": -1 } },
+      { "value": "bagimli", "label": "Birine bağımlı hale gelmek", "scores": { "confidence": -2, "relationship": 1, "money": 1 } },
+      { "value": "kacirmak", "label": "Fırsatı kaçırmak", "scores": { "urgency": 3, "opportunity": 1 } }
+    ]
+  },
+  {
+    "id": "mon_004", "category": "money", "stage": "depth", "order": 43, "weight": 3, "required": true, "tags": ["money", "opportunity"],
+    "text": "Bu fırsat senin için daha çok ne vaat ediyor?",
+    "type": "single",
+    "options": [
+      { "value": "ekgelir", "label": "Düzenli ek gelir", "scores": { "money": 3, "opportunity": 2, "confidence": 1 } },
+      { "value": "buyukkazanc", "label": "Tek seferlik büyük kazanç", "scores": { "money": 3, "risk": 2, "opportunity": 1 } },
+      { "value": "kendiis", "label": "Kendi işimin temeli", "scores": { "career": 3, "change": 2, "money": 2 } },
+      { "value": "yetenek", "label": "Yeteneklerimi paraya çevirme", "scores": { "career": 2, "confidence": 2, "money": 2 } }
+    ]
+  },
+  {
+    "id": "mon_005", "category": "money", "stage": "core", "order": 44, "weight": 3, "required": true, "tags": ["money", "risk"],
+    "text": "Risk konusundaki genel tavrın ne?",
+    "type": "scale", "scaleLabels": ["Hiç risk almak istemem", "Yüksek riski göze alırım"],
+    "scoring": { "risk": 2.5, "change": 1.5, "patience": -1 }
+  },
+  {
+    "id": "mon_006", "category": "money", "stage": "core", "order": 45, "weight": 2, "required": true, "tags": ["money"],
+    "text": "Parayla ilişkin genelde nasıl?",
+    "type": "single",
+    "options": [
+      { "value": "disiplin", "label": "Disiplinli ve takipli", "scores": { "confidence": 3, "money": 1 } },
+      { "value": "duygusal", "label": "Duygusal harcama eğilimli", "scores": { "risk": 2, "money": 1 } },
+      { "value": "kacinma", "label": "Kaçınıyorum — hesaplara bakmıyorum bile", "scores": { "risk": 2, "confidence": -2 } },
+      { "value": "dengeli", "label": "Planlı ama keyfe de yer var", "scores": { "hope": 1, "confidence": 1, "money": 1 } }
+    ]
+  },
+  {
+    "id": "mon_007", "category": "money", "stage": "core", "order": 46, "weight": 2, "required": true, "tags": ["money", "goal"],
+    "text": "Önümüzdeki dönem için asıl hedefin ne?",
+    "type": "single",
+    "options": [
+      { "value": "tampon", "label": "Rahat bir tampon oluşturmak", "scores": { "patience": 2, "money": 3 } },
+      { "value": "borctan", "label": "Borçtan kurtulmak", "scores": { "money": 3, "urgency": 2 } },
+      { "value": "yatirim", "label": "Yatırıma başlamak", "scores": { "money": 2, "opportunity": 2, "risk": 1 } },
+      { "value": "alim", "label": "Büyük bir alım (ev, araç)", "scores": { "money": 3, "change": 2 } }
+    ]
+  },
+  {
+    "id": "car_001", "category": "career", "stage": "core", "order": 50, "weight": 3, "required": true, "tags": ["career"],
+    "text": "Bu düşünce ne zamandır seninle taşıyor?",
+    "type": "single",
+    "options": [
+      { "value": "yeni", "label": "Yeni — son birkaç hafta", "scores": { "change": 2, "urgency": 1 } },
+      { "value": "aylar", "label": "Aylardır", "scores": { "change": 3, "patience": 1 } },
+      { "value": "sene", "label": "1 yılı geçti", "scores": { "change": 3, "urgency": 2, "hope": -1 }, "next": "car_002" },
+      { "value": "yillar", "label": "Yıllardır içimde", "scores": { "change": 4, "urgency": 2, "hope": -2, "risk": 1 }, "next": "car_002" }
+    ]
+  },
+  {
+    "id": "car_002", "category": "career", "stage": "depth", "order": 51, "weight": 3, "required": true, "tags": ["career", "stuck"],
+    "text": "Seni bu kadar bekleten ne?",
+    "type": "single",
+    "options": [
+      { "value": "guvence", "label": "Maddi güvence", "scores": { "money": 3, "patience": 2, "risk": 1 } },
+      { "value": "rahatlik", "label": "Tanıdık düzenin rahatlığı", "scores": { "patience": 3, "change": -1 } },
+      { "value": "zaman", "label": "Doğru zamanı bir türlü yakalayamamak", "scores": { "urgency": 2, "patience": 1 } },
+      { "value": "ailevi", "label": "Ailevi sorumluluklar", "scores": { "patience": 2, "relationship": 1 } }
+    ]
+  },
+  {
+    "id": "car_003", "category": "career", "stage": "core", "order": 52, "weight": 3, "required": true, "tags": ["career", "option"],
+    "text": "Elinde somut bir alternatif var mı?",
+    "type": "single",
+    "options": [
+      { "value": "teklif", "label": "Evet — bir teklif / somut ihtimal var", "scores": { "opportunity": 3, "confidence": 2 }, "next": "car_005" },
+      { "value": "plan", "label": "Eskiz halinde bir plan var", "scores": { "opportunity": 2, "patience": 2 } },
+      { "value": "yok", "label": "Hiç yok — sadece gitmek istiyorum", "scores": { "change": 3, "risk": 2, "confidence": -1 }, "next": "car_006" }
+    ]
+  },
+  {
+    "id": "car_004", "category": "career", "stage": "core", "order": 53, "weight": 3, "required": true, "tags": ["career", "holding"],
+    "text": "Seni mevcut işine bağlayan ana neden ne?",
+    "type": "single",
+    "options": [
+      { "value": "maas", "label": "Maaş ve sosyal haklar", "scores": { "money": 3, "patience": 1 } },
+      { "value": "insanlar", "label": "Ekip ve insanlar", "scores": { "relationship": 3 } },
+      { "value": "tanim", "label": "Tanıdık iş tanımı — yapabiliyorum", "scores": { "patience": 2, "change": -1 } },
+      { "value": "korku", "label": "Korku — başka yerde tutunamam", "scores": { "risk": 3, "confidence": -3, "hope": -1 } }
+    ]
+  },
+  {
+    "id": "car_005", "category": "career", "stage": "depth", "order": 54, "weight": 3, "required": true, "tags": ["career", "new"],
+    "text": "Yeni seçeneğin temel avantajı ne?",
+    "type": "single",
+    "options": [
+      { "value": "kazanc", "label": "Daha yüksek kazanç", "scores": { "money": 3, "opportunity": 1 } },
+      { "value": "buyume", "label": "Büyüme ve öğrenme alanı", "scores": { "career": 3, "confidence": 2, "hope": 1 } },
+      { "value": "denge", "label": "Daha iyi denge (saatler, uzaktan)", "scores": { "change": 2, "hope": 2 } },
+      { "value": "statu", "label": "Statü ve unvan", "scores": { "career": 2, "confidence": 1 } },
+      { "value": "kacis", "label": "Aslında sadece kaçış — buradan uzaklaşmak", "scores": { "change": 3, "risk": 2, "confidence": -1 } }
+    ]
+  },
+  {
+    "id": "car_006", "category": "career", "stage": "depth", "order": 55, "weight": 3, "required": true, "tags": ["career", "direction"],
+    "text": "Gitmek istediğin yön belli mi?",
+    "type": "single",
+    "options": [
+      { "value": "net", "label": "Evet, net bir alanım var", "scores": { "confidence": 3, "opportunity": 2 }, "next": "car_005" },
+      { "value": "daginik", "label": "Fikirlerim var ama dağınık", "scores": { "patience": 2, "confidence": -1 } },
+      { "value": "sadeceburasi", "label": "Hayır — sadece burası olmadığı belli", "scores": { "change": 3, "risk": 2, "confidence": -2 }, "next": "car_007" }
+    ]
+  },
+  {
+    "id": "car_007", "category": "career", "stage": "core", "order": 56, "weight": 3, "required": true, "tags": ["career"],
+    "text": "Yeni bir yolda baştan başlamaya ne kadar hazırsın?",
+    "type": "scale", "scaleLabels": ["Hiç hazır değilim", "Tamamen hazırım"],
+    "scoring": { "confidence": 2.5, "change": 2, "hope": 1.5 }
+  },
+  {
+    "id": "car_008", "category": "career", "stage": "core", "order": 57, "weight": 2, "required": true, "tags": ["career", "social"],
+    "text": "Çevren (aile, arkadaş, mentor) bu konuda ne diyor?",
+    "type": "single",
+    "options": [
+      { "value": "destek", "label": "Destekliyorlar", "scores": { "confidence": 2, "hope": 1 } },
+      { "value": "karisik", "label": "Kararsızlar / karışık", "scores": { "confidence": -1, "patience": 1 } },
+      { "value": "karsi", "label": "Karşı çıkıyorlar", "scores": { "risk": 2, "confidence": -2 } },
+      { "value": "kimse", "label": "Kimseye danışmadım", "scores": { "confidence": 1, "patience": 1 } }
+    ]
+  },
+  {
+    "id": "job_001", "category": "job", "stage": "core", "order": 60, "weight": 3, "required": true, "tags": ["job"],
+    "text": "İş arayışın hangi aşamada?",
+    "type": "single",
+    "options": [
+      { "value": "yeni", "label": "Yeni başladım", "scores": { "change": 2, "hope": 1 } },
+      { "value": "sure", "label": "Bir süredir devam ediyor", "scores": { "patience": 2, "urgency": 1 } },
+      { "value": "uzun", "label": "Uzun süredir bekliyorum", "scores": { "patience": 3, "urgency": 2, "hope": -2 }, "next": "job_004" },
+      { "value": "pasif", "label": "Aktif aramıyorum — fırsat kolluyorum", "scores": { "patience": 2, "opportunity": 1 } }
+    ]
+  },
+  {
+    "id": "job_002", "category": "job", "stage": "core", "order": 61, "weight": 2, "required": true, "tags": ["job", "signal"],
+    "text": "Başvurularından dönen sinyal nasıl?",
+    "type": "single",
+    "options": [
+      { "value": "mulakat", "label": "Mülakatlara çağrılıyorum ama olmuyor", "scores": { "opportunity": 2, "confidence": -1, "patience": 1 }, "next": "job_003" },
+      { "value": "az", "label": "Çok az dönüş oluyor", "scores": { "patience": 2, "hope": -1 } },
+      { "value": "hic", "label": "Hiç dönüş yok", "scores": { "hope": -2, "patience": 2, "risk": 1 } }
+    ]
+  },
+  {
+    "id": "job_003", "category": "job", "stage": "depth", "order": 62, "weight": 2, "required": true, "tags": ["job", "gap"],
+    "text": "Son kalan aşamada hep ne eksik kalıyor?",
+    "type": "single",
+    "options": [
+      { "value": "tecrube", "label": "Tecrübe / dil gibi şartlar", "scores": { "patience": 2, "confidence": -1 } },
+      { "value": "anlatamama", "label": "Kendimi anlatamıyorum", "scores": { "confidence": -2, "career": 1 } },
+      { "value": "referans", "label": "Referans / tanıdık eksikliği", "scores": { "relationship": 1, "patience": 1 } },
+      { "value": "sans", "label": "Sanırım şans faktörü", "scores": { "hope": 1, "patience": 1 } }
+    ]
+  },
+  {
+    "id": "job_004", "category": "job", "stage": "depth", "order": 63, "weight": 3, "required": true, "tags": ["job", "fatigue"],
+    "text": "Uzun süren bekleme sende ne bıraktı?",
+    "type": "single",
+    "options": [
+      { "value": "kararlilik", "label": "Kararlılık — daha çok çalışıyorum", "scores": { "hope": 2, "confidence": 2 } },
+      { "value": "suphe", "label": "Yorgunluk ve şüphe", "scores": { "hope": -3, "confidence": -2 }, "next": "job_005" },
+      { "value": "durgunluk", "label": "Durgunluk — kendimi kaptırdım", "scores": { "hope": -2, "patience": 1 } },
+      { "value": "planb", "label": "Alternatif plan yapmaya başladım", "scores": { "opportunity": 2, "change": 2, "hope": 1 } }
+    ]
+  },
+  {
+    "id": "job_005", "category": "job", "stage": "depth", "order": 64, "weight": 2, "required": true, "tags": ["job", "self"],
+    "text": "Kendini bu dönemde nasıl tanımlarsın?",
+    "type": "single",
+    "options": [
+      { "value": "gucu", "label": "Hâlâ güçlüyüm, sadece zaman gerekiyor", "scores": { "hope": 2, "confidence": 2, "patience": 1 } },
+      { "value": "motivasyon", "label": "Motivasyonum düştü", "scores": { "hope": -2, "patience": 1 } },
+      { "value": "alandegis", "label": "Alan değiştirmeyi düşünüyorum", "scores": { "change": 3, "career": 1 } },
+      { "value": "mola", "label": "Bir mola hak ettiğimi düşünüyorum", "scores": { "patience": 3, "hope": 1 } }
+    ]
+  },
+  {
+    "id": "job_006", "category": "job", "stage": "core", "order": 65, "weight": 3, "required": true, "tags": ["job"],
+    "text": "Becerilerine olan güvenin ne düzeyde?",
+    "type": "scale", "scaleLabels": ["Pek güvenmiyorum", "Tamamen güveniyorum"],
+    "scoring": { "confidence": 3, "hope": 1.5 }
+  }
+]

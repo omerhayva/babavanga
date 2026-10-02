@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+
+# runtime store (guest/user data, admin overrides) — içerik varsayılanları /data altındadır
+/storage/*
+!/storage/.gitkeep
+
+# env
+.env
+.env.local
+
+# logs
+npm-debug.log*

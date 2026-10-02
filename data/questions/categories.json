@@ -1,0 +1,296 @@
+[
+  {
+    "id": "love",
+    "name": "Aşk",
+    "description": "Kalbin, karşılığın ve iki kişi arasındaki görünmeyen akışın soruları.",
+    "glyph": "☾",
+    "keywords": [
+      "aşk",
+      "sevdiğim",
+      "sevgili",
+      "flört",
+      "aşık",
+      "hoşlan",
+      "kalbim",
+      "sevdim",
+      "sevmiyor",
+      "karşılıksız",
+      "geri döner mi",
+      "döner mi",
+      "geri gel",
+      "barış",
+      "bir araya",
+      "benden hoşlanıyor",
+      "sevdiğim kişi"
+    ]
+  },
+  {
+    "id": "relationship",
+    "name": "İlişki",
+    "description": "Sürmekte olan bir birlikteliğin dengesi, iletişimi ve yönü.",
+    "glyph": "⚭",
+    "keywords": [
+      "ilişkim",
+      "ilişki",
+      "birliktelik",
+      "birlikteliğim",
+      "partnerim",
+      "sevgilimle",
+      "tartış",
+      "küs",
+      "uzaklaş",
+      "iletişimimiz",
+      "aranız",
+      "bizim olamaz"
+    ]
+  },
+  {
+    "id": "marriage",
+    "name": "Evlilik",
+    "description": "Evlilik, nişan ve ortak hayat kurma kararları.",
+    "glyph": "⊕",
+    "keywords": [
+      "evlen",
+      "evlilik",
+      "nişan",
+      "düğün",
+      "kayınvalide",
+      "kız isteme",
+      "imza",
+      "eşimle",
+      "eşim",
+      "nikah",
+      "evlenme teklif",
+      "evlenirsek",
+      "evlenmek istiyorum"
+    ]
+  },
+  {
+    "id": "money",
+    "name": "Para",
+    "description": "Maddi düzen, bolluk, borç ve kazanç döngüleri.",
+    "glyph": "◈",
+    "keywords": [
+      "para",
+      "maddi",
+      "borç",
+      "borçluyum",
+      "gelir",
+      "gider",
+      "maaş",
+      "zengin",
+      "bütçe",
+      "yatırım",
+      "birikim",
+      "kazan",
+      "satın al",
+      "ev al"
+    ]
+  },
+  {
+    "id": "career",
+    "name": "Kariyer",
+    "description": "Yol, mevki, terfi ve mesleki doyum arayışı.",
+    "glyph": "⚔",
+    "keywords": [
+      "kariyer",
+      "terfi",
+      "iş değiş",
+      "işimden ayrıl",
+      "işten ayrıl",
+      "meslek",
+      "müdür",
+      "şirket",
+      "proje",
+      "iş teklifi",
+      "atan",
+      "gelişim",
+      "departman",
+      "patron"
+    ]
+  },
+  {
+    "id": "job",
+    "name": "İş",
+    "description": "İş arayışı, başvurular ve yeni bir kapı bulma süreci.",
+    "glyph": "⚒",
+    "keywords": [
+      "iş bul",
+      "iş arıyorum",
+      "işsiz",
+      "başvuru",
+      "mülakat",
+      "işe gir",
+      "yeni iş",
+      "cv",
+      "referans",
+      "iş ver"
+    ]
+  },
+  {
+    "id": "future",
+    "name": "Gelecek",
+    "description": "İleride olacaklara, yönelimlere ve hayatın genel akışına bakış.",
+    "glyph": "✦",
+    "keywords": [
+      "gelecek",
+      "ileride",
+      "önümüzdeki",
+      "5 yıl",
+      "10 yıl",
+      "kader",
+      "hayatım nasıl",
+      "sonunda",
+      "öne çıkacak"
+    ]
+  },
+  {
+    "id": "family",
+    "name": "Aile",
+    "description": "Aile içi bağlar, sorumluluklar ve evdeki denge.",
+    "glyph": "⌂",
+    "keywords": [
+      "ailem",
+      "annem",
+      "babam",
+      "kardeş",
+      "aile içi",
+      "evde",
+      "oğlum",
+      "kızım",
+      "çocuğum",
+      "akraba",
+      "amcam",
+      "teyzem"
+    ]
+  },
+  {
+    "id": "friendship",
+    "name": "Arkadaşlık",
+    "description": "Dostluklar, güven ve emek dengesi.",
+    "glyph": "✧",
+    "keywords": [
+      "arkadaş",
+      "dostum",
+      "dost",
+      "küstüm",
+      "arkadaşlık",
+      "güvenilir mi",
+      "bana yardım eder mi",
+      "yalnız"
+    ]
+  },
+  {
+    "id": "decision",
+    "name": "Karar",
+    "description": "İki yol arasında kalınan, netlik bekleyen tercih anları.",
+    "glyph": "☯",
+    "keywords": [
+      "karar",
+      "seçmeli",
+      "hangisini",
+      "tercih",
+      "ikilem",
+      "yapmalı mıyım",
+      "kararsız",
+      "iki yol",
+      "şansımı denemeli"
+    ]
+  },
+  {
+    "id": "newstart",
+    "name": "Yeni Başlangıç",
+    "description": "Sıfırdan başlama, taşınma ve hayatı yeniden kurma enerjisi.",
+    "glyph": "☀",
+    "keywords": [
+      "yeni başlangıç",
+      "sıfırdan",
+      "taşınma",
+      "taşın",
+      "yeni şehir",
+      "yeni hayat",
+      "yeni bir hayat",
+      "yeniden başla",
+      "yeni sayfa",
+      "hayatımı değiştir"
+    ]
+  },
+  {
+    "id": "past",
+    "name": "Geçmiş",
+    "description": "Eski hikâyelerin kapanmamış sayfaları ve etkisi.",
+    "glyph": "☿",
+    "keywords": [
+      "geçmiş",
+      "eski sevgilim",
+      "geri dönmeli",
+      "unutamıyorum",
+      "eski işim",
+      "o günler",
+      "o zamanlar",
+      "çocukluğum",
+      "eski"
+    ]
+  },
+  {
+    "id": "news",
+    "name": "Haber / Bekleyiş",
+    "description": "Sonuç beklenen süreçler ve haberlerin zamanlaması.",
+    "glyph": "⌛",
+    "keywords": [
+      "haber",
+      "sonuç",
+      "sonucum",
+      "sonucu",
+      "açıklanacak",
+      "sınav sonucu",
+      "başvuru sonucu",
+      "bekleyiş",
+      "sonuçlan",
+      "ne zaman açıklanır",
+      "sonucunu merak"
+    ]
+  },
+  {
+    "id": "travel",
+    "name": "Yolculuk",
+    "description": "Yol, uzaklık ve yeni yerlerin çağrısı.",
+    "glyph": "✈",
+    "keywords": [
+      "yolculuk",
+      "seyahat",
+      "tatil",
+      "yurt dışı",
+      "vize",
+      "gitsem mi",
+      "uzaklara",
+      "taşınmalı"
+    ]
+  },
+  {
+    "id": "loss",
+    "name": "Kayıp / Arayış",
+    "description": "Kayıpların ardından yön ve anlam arayışı.",
+    "glyph": "☾",
+    "keywords": [
+      "kaybettim",
+      "kayıp",
+      "boşluk",
+      "anlam arıyorum",
+      "anlam bulamıyorum",
+      "amaçsız",
+      "ne istiyorum",
+      "yönümü kaybet",
+      "hedefim yok",
+      "motivasyonum yok",
+      "tükenmiş hissediyorum"
+    ]
+  },
+  {
+    "id": "general",
+    "name": "Genel Hayat",
+    "description": "Hayatın bütününe bakan, her konuya uyan genel bakış.",
+    "glyph": "◉",
+    "keywords": []
+  }
+]

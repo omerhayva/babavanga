@@ -1,0 +1,136 @@
+[
+  {
+    "id": "gnr_001", "category": "general", "stage": "generic", "order": 901, "weight": 3, "required": true, "tags": ["risk"],
+    "text": "Belirsizlik içinde seni en çok ürküten 'ya olmazsa' senaryosu hangisi?",
+    "type": "single",
+    "options": [
+      { "value": "emek", "label": "Emeklerim boşa gider", "scores": { "risk": 2, "hope": -1 } },
+      { "value": "sevdik", "label": "Sevdiklerim üzülür", "scores": { "risk": 2, "relationship": 1 } },
+      { "value": "maddi", "label": "Maddi sıkışıklık yaşarım", "scores": { "risk": 2, "money": 2 } },
+      { "value": "guven", "label": "Kendime güvenim sarsılır", "scores": { "risk": 2, "confidence": -2 } }
+    ]
+  },
+  {
+    "id": "gnr_002", "category": "general", "stage": "generic", "order": 902, "weight": 2, "required": true, "tags": ["hope"],
+    "text": "Umut dediğinde ilk aklına gelen görüntü ne?",
+    "type": "single",
+    "options": [
+      { "value": "eski", "label": "Eski iyi günler", "scores": { "patience": 1, "hope": -1 } },
+      { "value": "yeni", "label": "Henüz yaşamadığım bir sahne", "scores": { "hope": 3, "change": 1 } },
+      { "value": "cumle", "label": "Bana söylenmiş bir cümle", "scores": { "relationship": 1, "hope": 1 } },
+      { "value": "bosluk", "label": "Hiçbir şey — boşluk", "scores": { "hope": -3, "patience": 1 } }
+    ]
+  },
+  {
+    "id": "gnr_003", "category": "general", "stage": "generic", "order": 903, "weight": 2, "required": true, "tags": ["patience"],
+    "text": "Beklemek sana ne hissettiriyor?",
+    "type": "single",
+    "options": [
+      { "value": "olgun", "label": "Olgunlaştırıyor", "scores": { "patience": 3, "hope": 1 } },
+      { "value": "isit", "label": "Isındırıyor ama yavaş", "scores": { "patience": 2 } },
+      { "value": "curut", "label": "Çürütüyor", "scores": { "patience": -2, "urgency": 3, "hope": -1 } },
+      { "value": "aldat", "label": "Aldatıyor — beklediğim gelmeyecek", "scores": { "hope": -3, "urgency": 2 } }
+    ]
+  },
+  {
+    "id": "gnr_004", "category": "general", "stage": "generic", "order": 904, "weight": 2, "required": true, "tags": ["money"],
+    "text": "Maddi konularda nabzın nasıl?",
+    "type": "single",
+    "options": [
+      { "value": "guvende", "label": "Güvende hissediyorum", "scores": { "money": 1, "confidence": 2 } },
+      { "value": "tedirgin", "label": "Tedirginim", "scores": { "money": 2, "risk": 1 } },
+      { "value": "sikisik", "label": "Sıkışık bir dönemdeyim", "scores": { "money": 3, "risk": 2, "hope": -1 } },
+      { "value": "kaynak", "label": "Yeni bir kaynak arıyorum", "scores": { "money": 2, "opportunity": 2 } }
+    ]
+  },
+  {
+    "id": "gnr_005", "category": "general", "stage": "generic", "order": 905, "weight": 2, "required": true, "tags": ["love"],
+    "text": "Sevmek konusunda kalbin ne durumda?",
+    "type": "single",
+    "options": [
+      { "value": "acik", "label": "Açık ama dikkatli", "scores": { "relationship": 2, "confidence": 1 } },
+      { "value": "kapali", "label": "Kapalı — koruma modunda", "scores": { "relationship": -2, "patience": 2 } },
+      { "value": "canli", "label": "Canlı ve umutlu", "scores": { "relationship": 2, "hope": 3 } },
+      { "value": "yorgun", "label": "Yorgun ama istekli", "scores": { "relationship": 1, "hope": -1 } }
+    ]
+  },
+  {
+    "id": "gnr_006", "category": "general", "stage": "generic", "order": 906, "weight": 2, "required": true, "tags": ["timing"],
+    "text": "İçindeki acele hissini neye bağlıyorsun?",
+    "type": "single",
+    "options": [
+      { "value": "yas", "label": "Yaş aldıkça artıyor", "scores": { "urgency": 3, "patience": -1 } },
+      { "value": "kiyas", "label": "Çevremle kıyaslayınca", "scores": { "urgency": 2, "confidence": -1 } },
+      { "value": "pencere", "label": "Bir şans penceresi kapanır korkusu", "scores": { "urgency": 3, "risk": 1, "opportunity": 1 } },
+      { "value": "yorgunluk", "label": "Yorgunluğuma", "scores": { "urgency": 2, "hope": -1 } }
+    ]
+  },
+  {
+    "id": "gnr_007", "category": "general", "stage": "generic", "order": 907, "weight": 2, "required": true, "tags": ["decision"],
+    "text": "Karar anlarında seni en çok yönlendiren ne?",
+    "type": "single",
+    "options": [
+      { "value": "mantik", "label": "Mantık ve listeler", "scores": { "confidence": 2 } },
+      { "value": "yakin", "label": "Sevdiklerimin görüşü", "scores": { "relationship": 2, "confidence": -1 } },
+      { "value": "ictepki", "label": "İlk iç tepkim", "scores": { "confidence": 3 } },
+      { "value": "isaret", "label": "Tarihler, işaretler, içime doğanlar", "scores": { "hope": 1, "patience": 1 } }
+    ]
+  },
+  {
+    "id": "gnr_008", "category": "general", "stage": "generic", "order": 908, "weight": 3, "required": true, "tags": ["money", "risk"],
+    "text": "Büyük bir adım atarken güvenlik ağın ne?",
+    "type": "single",
+    "options": [
+      { "value": "birikim", "label": "Birikimim var", "scores": { "money": 2, "confidence": 2 } },
+      { "value": "aile", "label": "Aile desteği var", "scores": { "relationship": 2, "money": 1 } },
+      { "value": "sifir", "label": "Hiç yok — sıfırdan", "scores": { "risk": 3, "change": 2 } },
+      { "value": "yetenek", "label": "Yeteneklerim benim ağım", "scores": { "confidence": 3, "career": 1 } }
+    ]
+  },
+  {
+    "id": "gnr_009", "category": "general", "stage": "generic", "order": 909, "weight": 1, "required": true, "tags": ["number"],
+    "text": "0-9 arasından sana şu an 'doğru gelen' sayı hangisi?",
+    "helperText": "Çok düşünme — ilk içine doğan.",
+    "type": "number",
+    "options": [
+      { "value": "0", "label": "0" }, { "value": "1", "label": "1" }, { "value": "2", "label": "2" },
+      { "value": "3", "label": "3" }, { "value": "4", "label": "4" }, { "value": "5", "label": "5" },
+      { "value": "6", "label": "6" }, { "value": "7", "label": "7" }, { "value": "8", "label": "8" },
+      { "value": "9", "label": "9" }
+    ]
+  },
+  {
+    "id": "gnr_010", "category": "general", "stage": "generic", "order": 910, "weight": 2, "required": true, "tags": ["loop"],
+    "text": "Son bir ayda en çok tekrarlayan düşüncen neydi?",
+    "type": "single",
+    "options": [
+      { "value": "dongu", "label": "Aynı döngüde takılıyorum", "scores": { "change": 2, "urgency": 1, "hope": -1 } },
+      { "value": "hayal", "label": "Yeni bir başlangıç hayali", "scores": { "change": 2, "hope": 2 } },
+      { "value": "muhasebe", "label": "Geçmişin muhasebesi", "scores": { "patience": 2, "urgency": -1 } },
+      { "value": "hak", "label": "'Bunu hak etmiyorum' hissi", "scores": { "confidence": -3, "hope": -1 } },
+      { "value": "plan", "label": "Umutlu planlar", "scores": { "hope": 3, "opportunity": 1 } }
+    ]
+  },
+  {
+    "id": "gnr_011", "category": "general", "stage": "generic", "order": 911, "weight": 2, "required": true, "tags": ["self"],
+    "text": "Yalnız kaldığında neyle karşılaşıyorsun?",
+    "type": "single",
+    "options": [
+      { "value": "huzur", "label": "Huzur", "scores": { "patience": 2, "confidence": 1 } },
+      { "value": "huzursuzluk", "label": "Huzursuzluk", "scores": { "urgency": 2, "hope": -1 } },
+      { "value": "baris", "label": "Kendimle barışıklık", "scores": { "confidence": 3 } },
+      { "value": "karar", "label": "Karar vermeye çalışan bir zihin", "scores": { "urgency": 1, "confidence": -1 } }
+    ]
+  },
+  {
+    "id": "gnr_012", "category": "general", "stage": "generic", "order": 912, "weight": 2, "required": true, "tags": ["vision"],
+    "text": "Bir yıl sonra kendini nerede görmek istersin?",
+    "type": "single",
+    "options": [
+      { "value": "guc", "label": "Aynı yerde ama daha güçlü", "scores": { "patience": 2, "confidence": 2 } },
+      { "value": "yeni", "label": "Yeni bir şehirde / işte", "scores": { "change": 3, "opportunity": 1 } },
+      { "value": "iliski", "label": "Bir ilişki içinde huzurlu", "scores": { "relationship": 3, "hope": 1 } },
+      { "value": "kendi", "label": "Kendi kurduğum bir düzende", "scores": { "change": 2, "career": 2, "confidence": 2 } }
+    ]
+  }
+]
